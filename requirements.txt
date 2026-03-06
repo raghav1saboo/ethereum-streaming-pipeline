@@ -1,0 +1,3 @@
+web3
+azure-storage-blob
+python-dotenv
