@@ -1,4 +1,4 @@
-🚀 Real-Time Ethereum Streaming Pipeline: Medallion Architecture
+### 🚀 Real-Time Ethereum Streaming Pipeline: Medallion Architecture
 A production-grade Data Engineering pipeline that ingests live Ethereum blockchain data, processes it through a Medallion Architecture (Bronze, Silver, Gold) on Databricks, and identifies "Whale" transactions in real-time.
 
 🏗️ Architecture Overview
