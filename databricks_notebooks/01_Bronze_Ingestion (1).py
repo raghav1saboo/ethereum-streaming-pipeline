@@ -4,12 +4,11 @@ from pyspark.sql.functions import *
 from pyspark.sql.types import *
 import re
 import time
+import os
 
 # 1. Security Configuration
 storage_account = "blockchainlake"
-storage_key = "vK0uvZrpnYR8Ph+g/VjmHkcEbdPjKY/buNsqtYBWBRvrFh6LiIoXoeR9hPE9wLFkUab220RCtoy5+AStgBOgOw=="
-
-spark.conf.set(f"fs.azure.account.key.{storage_account}.dfs.core.windows.net", storage_key)
+storage_key = os.getenv('storage_key')
 
 # 2. Paths - Use a completely fresh checkpoint to avoid schema conflicts
 checkpoint_suffix = int(time.time())
